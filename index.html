@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div id="container">
+
+<div id="input-container">
+    <div id="input-image">
+        <i class="fa-sharp fa-solid fa-file-circle-check"></i>
+       
+
+
+    </div>
+    <!-- here you can add task -->
+    <div id="input-text">
+        <label for="text1">
+        <input type="text" id="text1" name="text1" placeholder="Add to do List" onclick="show()">
+        </label>
+    </div>
+    <!-- it will show plus image icon -->
+    <div id="plusicon">
+        <i class="fa-solid fa-circle-plus"></i>
+    </div>
+</div>
+<div id="taskcompleted">
+    <i class="fa-solid fa-check-double" id="delete"></i>
+   <span id="completedtask-info">Complete all task</span> 
+   <span id="clearcompleted-info">Clear Completed</span>
+</div>
+
+<div id="todolist-shows">
+    <ul id="display-list" >
+        <!-- <li><input type="checkbox" class="largerCheckbox" id="inputlist">Anjnjn</li> -->
+        
+
+    </ul>
+</div>
+<!-- it will count task -->
+<div id="taskcounterinfo">
+  
+    <span id="task-counter">0</span><span id="taskcompleted">tasks left</span>
+  <div id="all-complete-uncomplete">
+<span id="All" style="color:white">ALL</span>
+<span id="completed"> Completed</span>
+<span id="uncompleted">Uncomplete</span>
+
+  </div>  
+
+</div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+#container{
+    height: 50%;
+    width:50vw;
+    border: 2px solid rgb(167, 161, 161);
+    outline: 4px solid rgb(183, 183, 183);
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px #aaaaaa;
+    background-color: white;
+    padding-bottom: 14px;
+    background-image: linear-gradient(
+        45deg,
+        hsl(240deg 44% 66%) 0%,
+        hsl(266deg 35% 61%) 8%,
+        hsl(293deg 26% 55%) 17%,
+        hsl(318deg 29% 54%) 25%,
+        hsl(333deg 32% 53%) 33%,
+        hsl(345deg 32% 52%) 42%,
+        hsl(356deg 29% 51%) 50%,
+        hsl(7deg 30% 48%) 58%,
+        hsl(17deg 33% 43%) 67%,
+        hsl(25deg 34% 39%) 75%,
+        hsl(33deg 33% 36%) 83%,
+        hsl(43deg 29% 33%) 92%,
+        hsl(55deg 24% 31%) 100%
+      );
+  
+    
+}
+/* This is for input where user can add task */
+#input-container{
+
+    height: 10vh;
+    width: 95%;
+    background-color: rgb(207, 200, 200);
+    margin-top:20px;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 10px;
+}
+/* use for image left to input */
+#input-image{
+    height: 80%;
+    width: 10%;
+    display: inline-block;
+    margin-left: 7px;
+    margin-top: 18px;
+    margin-right: 0px;
+}
+#input-image i{
+    font-size: 32px;
+    
+    color:#9b9898;
+}
+#input-container:hover{
+    opacity: 0.9;
+}
+#input-text{
+    display: inline-block;
+    margin-left: 0px;
+    position: absolute;
+    top:1px;
+    
+   
+}
+input[type=text]
+{
+    height: 30px;
+    margin-top:0;
+    width: 70%;
+    padding-top: 20px;
+    outline: none;
+    line-height: 3px;
+    font-size: 33px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+/* when user toggle that text part will be cutted show */
+#display-list input:checked + label {
+    text-decoration: line-through;
+  }
+  /* for plusicon */
+#plusicon{
+    display: none;
+    position: absolute;
+    right:30px;
+    top:20px;
+    font-size: 2rem;
+}
+/* use for complete all task */
+#taskcompleted i{
+    display:inline-block;
+    margin-left:3%;
+    font-size: 0.8rem;
+    color: lightgray;
+    margin-top: 11px;
+    
+   
+}
+/* when hover text will black */
+#taskcompleted i:hover {
+   
+    color:black;
+   
+}
+/* when hover text will black */
+#taskcompleted span:hover {
+   
+    color:black;
+   
+}
+
+#taskcompleted .fa-solid { transform: scale(2.5,2); }
+#completedtask-info{
+    margin-left: 3%;
+    color:lightgrey;
+}
+
+#clearcompleted-info{
+    margin-left: 59%;
+    color:white;
+}
+#display-list{
+    list-style: none;
+    border-left: 0px;
+    border-right:0px;
+    border:1px solid lightgrey;
+}
+#display-list li{
+    margin-top: 9px;
+    margin-bottom: 9px;
+    font-size: 2rem;
+}
+
+
+
+ .largerCheckbox {
+    width: 35px;
+    height: 23px;
+}
+#task-counter{
+    margin-left: 20px;
+    
+    /* padding-right: 20px; */
+
+}
+#taskcompleted{
+    margin-left: 5px;
+    color:white;
+}
+#display-list{
+    position: relative;
+}
+#display-list li i{
+    display: none;
+}
+#display-list li:hover i{
+    position: absolute;
+    right:200px;
+    margin-top: -35px;
+    display: block;
+}
+#taskcounterinfo{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+#all-complete-uncomplete{
+    position: absolute;
+    right: 10px;
+}
+#all-complete-uncomplete #completed, #uncompleted{
+    color:white;
+    
+}
+ 
+#all-complete-uncomplete #completed:hover {
+        color: black;
+}
+#all-complete-uncomplete #uncompleted:hover {
+    color: black;
+}
+
+
+
+
